@@ -1,0 +1,12 @@
+{
+  "name": "practice-class-diagram",
+  "version": "1.0.0",
+  "description": "クラス図を実装に反映させるのが苦手なので、ChatGPTにお願いして練習問題を作ってもらいました。  \r その問題文と、解答を載せてあるリポジトリ。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
