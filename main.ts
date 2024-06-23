@@ -1,20 +1,19 @@
-import { Customer } from "./lesson2/src/customer";
-import { Order } from "./lesson2/src/order";
-import { Product } from "./lesson2/src/product";
+import { Teacher } from "./lesson3/src/teacher"
+import { Student } from "./lesson3/src/student"
+import { Course } from "./lesson3/src/course";
 
-const customer1 = new Customer(1, 'John Doe', 'john.doe@example.com');
-const order1 = new Order(101, customer1);
+const teacher1 = new Teacher(1, 'Ms. Smith', 'Mathematics');
+const course1 = new Course(101, 'Algebra', teacher1);
 
-const product1 = new Product(1, 'Laptop', 1000);
-const product2 = new Product(2, 'Mouse', 50);
+const student1 = new Student(1, 'Alice', 10);
+const student2 = new Student(2, 'Bob', 11);
 
-order1.addProduct(product1);
-order1.addProduct(product2);
+course1.addStudent(student1);
+course1.addStudent(student2);
 
-console.log(order1.getProducts());
-console.log(order1.getTotalAmount());
+console.log(course1.getStudents()); // Studentオブジェクトの配列を表示
+console.log(course1.getTeacher().getName()); // 教師の名前を表示
 
-order1.removeProduct(1);
+course1.removeStudent(1);
 
-console.log(order1.getProducts());
-console.log(order1.getTotalAmount());
+console.log(course1.getStudents()); // 残りのStudentオブジェクトの配列を表示
