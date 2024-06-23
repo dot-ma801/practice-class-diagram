@@ -7,11 +7,11 @@ export class Course {
     private teacher: Teacher;
     private students: Student[];
 
-    constructor(id: number, name: string, teacher: Teacher, students: Student[]){
+    constructor(id: number, name: string, teacher: Teacher){
         this.id = id;
         this.name = name;
         this.teacher = teacher;
-        this.students = students;
+        this.students = [];
     }
 
     // getters
@@ -37,6 +37,6 @@ export class Course {
     }
 
     public removeStudent(studentId: number): void {
-        this.students.filter((student) => student.getId() != studentId);
+        this.students = this.students.filter((student) => student.getId() != studentId);
     }
 }
