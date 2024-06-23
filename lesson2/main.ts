@@ -1,6 +1,6 @@
-import { Customer } from "./lesson2/customer";
-import { Order } from "./lesson2/order";
-import { Product } from "./lesson2/product";
+import { Customer } from "./customer";
+import { Order } from "./order";
+import { Product } from "./product";
 
 const customer1 = new Customer(1, 'John Doe', 'john.doe@example.com');
 const order1 = new Order(101, customer1);
