@@ -1,6 +1,6 @@
-import { Teacher } from "./lesson3/src/teacher"
-import { Student } from "./lesson3/src/student"
-import { Course } from "./lesson3/src/course";
+import { Teacher } from "./teacher"
+import { Student } from "./student"
+import { Course } from "./course";
 
 const teacher1 = new Teacher(1, 'Ms. Smith', 'Mathematics');
 const course1 = new Course(101, 'Algebra', teacher1);
