@@ -1,6 +1,6 @@
 import { Person } from "./person";
 
-export class Students extends Person {
+export class Student extends Person {
     private grade: number;
     
     constructor(id: number, name: string, grade: number) {
