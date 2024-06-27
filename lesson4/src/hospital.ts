@@ -7,12 +7,6 @@ export class Hospital {
     private patients: Patient[] = [];
     private appointments: Appointment[] = [];
 
-    constructor(doctor: Doctor, patient: Patient, appointment: Appointment) {
-        this.doctors.push(doctor);
-        this.patients.push(patient);
-        this.appointments.push(appointment);
-    }
-
     public addDoctor(doctor: Doctor): void {
         this.doctors.push(doctor);
     }
